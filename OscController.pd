@@ -1,4 +1,4 @@
-#N canvas -7 0 958 468 12;
+#N canvas 0 38 958 468 12;
 #X obj 138 206 ctlin;
 #X obj 138 288 route 1 2, f 22;
 #X obj 138 233 swap;
@@ -7,8 +7,8 @@
 #X text 10 4 Frequency Control ――――――――――――――――― The whole putrpose of this patch is to control the frequency of an oscillator with two Midi Values - The first value is broad frequency control - The second value is fine frequency control The patch is hardcoded to feed a MIDI ctrl 1 and 2 message. This can be changed by altering the `route` object below.;
 #X obj 31 103 hsl 162 19 0 127 0 0 empty empty empty -2 -10 0 12 #fcfcfc #000000 #000000 0 1;
 #X obj 31 130 hsl 162 19 0 127 0 0 empty empty empty -2 -10 0 12 #fcfcfc #000000 #000000 0 1;
-#X obj 138 385 dac~ 1 2;
-#X obj 138 356 osc~;
+#X obj 137 393 dac~ 1 2;
+#X obj 137 343 osc~;
 #X floatatom 30 420 10 0 0 0 - - - 0;
 #X text 101 419 Current Frequency;
 #N canvas 1146 220 450 353 freqctrl 0;
@@ -36,6 +36,13 @@
 #X text 200 102 Broad Frequency Ctrl;
 #X text 200 129 Fine Frequency Ctrl;
 #X obj 138 260 pack f f;
+#X obj 295 357 hsl 162 19 0 1 0 0 empty empty empty -2 -10 0 12 #fcfcfc #000000 #000000 0 1;
+#X obj 137 368 *~ 0.707;
+#X floatatom 292 383 10 0 0 0 - - - 0;
+#X text 377 384 Current Gain;
+#X text 471 357 Gain Ctrl;
+#X obj 531 314 loadbang;
+#X msg 531 338 0.707;
 #X connect 0 0 2 0;
 #X connect 0 1 2 1;
 #X connect 1 0 12 0;
@@ -46,7 +53,13 @@
 #X connect 4 0 1 0;
 #X connect 6 0 3 0;
 #X connect 7 0 4 0;
-#X connect 9 0 8 0;
+#X connect 9 0 18 0;
 #X connect 12 0 10 0;
 #X connect 12 0 9 0;
 #X connect 16 0 1 0;
+#X connect 17 0 18 1;
+#X connect 17 0 19 0;
+#X connect 18 0 8 0;
+#X connect 18 0 8 1;
+#X connect 22 0 23 0;
+#X connect 23 0 17 0;
