@@ -13,26 +13,47 @@ The test signals implemented in the patch include:
 All the above mentioned sections are routed into a final output stage which allows you to monitor and control
 the output gain level of your signal.
 
-## Usage
-![image](file:///c%3A/STUFF/PUREDATA/overview.png)
+![alt text](overview.png)
+*Figure 1: Patch overview.*
+
+In *Figure 1* you have an overview of the entire patch in which each sound source section is denoted by a different color. An “on/off” toggle to activate or deactivate a sound source is present above each section.
+
+### Frequency oscillator
+
+The frequency oscillator allows precise adjustment of your system’s excitation frequency. It can be controlled using two horizontal sliders: the upper slider provides raw frequency control, while the lower slider enables fine-tuning within a specific range. Additionally, the oscillator can be operated via an external MIDI controller. You can simply connect the controller to your pc and activate it through the main PD menu − > media
+− > M IDIsettings. Then, if your controller has a keyboard you will be able to press a key and the frequency oscillator will output the corresponding frequency in Hz for that note. Otherwise, you can use two knobs on your controller to control the two sliders. To accomplish this, you should be able to use the first two knobs on your controller. However, depending on the layout of the midi controller numbers on your device you might have to make a small adjustment. Figure 2 reports a detailed view of the frequency oscillator section, By first checking the value corresponding to the knob used, you can consequently change the values in the route object to specify the preferred knobs (this operation must be performed in Edit mode by pressing Ctrl/Cmd + E).
+
+![alt text](freq.oscillator.png)
+*Figure 2: Frequency oscillator section detailed view*
+
+### Noise Generator
+The noise generator outputs a white noise signal which can be filtered by tweaking the cutoff frequency slider controlling a low-pass filter. Try to use this signal to stimulate the sound board of your instrument while
+monitoring the response by carefully hearing or looking at a spectrum analyzer connected to a recording device attached to the board. Then add masses or play around with the braces position in real time on your soundboard, focus on the different sounding response of the instrument or on the differences you observe from the spectrum analyzer. Further reference on this kind of analysis can be found in [2] .
+
+![](noise.png)
+
+### Exponential Sine Sweep
+The exponential sine sweep section allows you to use a customized sweep as the excitation sound signal for your measurements. You can customize it by tweaking the values in the objects highlighted in *Figure 4*.
+
+![alt text](exp.sinesweep.png)
+
+### Audio file 
+
+This section allows you to upload your own audio file (.wav) and use it for your tests. Copy your.wav file into the same folder as the PD patch. Then, by clicking on the open object, pure data will get the audio file which
+can then be played by toggling the box on its right. This is also illustrated in *Figure 5*.
+
+![alt text](audiofile.png)
+
+### Output stage
+
+This is the output section of the patch. You can both visualize the output frequency and adjust the output gain level of your generated test signal from the vertical slider.
+
+![alt text](output.png)
 
 
-```python
-import foobar
 
-# returns 'words'
-foobar.pluralize('word')
+## References
 
-# returns 'geese'
-foobar.pluralize('goose')
+[1] Ernst Florens Friedrich Chladni. Treatise on Acoustics: The First Comprehensive English Translation of EFF Chladni’s Trait´e d’Acoustique. Springer, 2015.
 
-# returns 'phenomenon'
-foobar.singularize('phenomena')
-```
-
-## Contributing
-
-Pull requests are welcome. For major changes, please open an issue first
-to discuss what you would like to change.
-
-Please make sure to update tests as appropriate.
+[2] Ludovico Ausiello et al. “Affordable wide-band measurement ecosystem for musical acoustics based on electro-dynamic transducers”. In: Acta Acustica 8 (2024), p. 53.
