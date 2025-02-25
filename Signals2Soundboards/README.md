@@ -27,8 +27,7 @@ The frequency oscillator allows precise adjustment of your system’s excitation
 *Figure 2: Frequency oscillator section detailed view*
 
 ### Noise Generator
-The noise generator outputs a white noise signal which can be filtered by tweaking the cutoff frequency slider controlling a low-pass filter. Try to use this signal to stimulate the sound board of your instrument while
-monitoring the response by carefully hearing or looking at a spectrum analyzer connected to a recording device attached to the board. Then add masses or play around with the braces position in real time on your soundboard, focus on the different sounding response of the instrument or on the differences you observe from the spectrum analyzer. Further reference on this kind of analysis can be found in [2] .
+The noise generator outputs a white noise signal which can be filtered by tweaking the cutoff frequency slider controlling a low-pass filter. Try to use this signal to stimulate the sound board of your instrument while monitoring the response by simply listening to the output or by looking at a spectrum analyzer connected to a recording device (e.g. accelerometer) attached to the board. Then add masses or play around with the braces position in real time on your soundboard, focus on the different acoustics response of the instrument or on the differences you observe from your spectrum analyzer. Further reference on this kind of analysis can be found in [2] .
 
 ![](noise.png)
 
