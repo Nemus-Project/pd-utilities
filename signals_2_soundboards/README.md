@@ -54,3 +54,15 @@ This is the output section of the patch. You can both visualize the output frequ
 [1] Ernst Florens Friedrich Chladni. Treatise on Acoustics: The First Comprehensive English Translation of EFF Chladni’s Trait´e d’Acoustique. Springer, 2015.
 
 [2] Ludovico Ausiello et al. “Affordable wide-band measurement ecosystem for musical acoustics based on electro-dynamic transducers”. In: Acta Acustica 8 (2024), p. 53.
+
+## BibTex Citation
+
+@software{duran_pd_2025,
+ author = {Sebastian Duran and Matthew Hamilton},
+ date-modified = {2025-06-11 14:49:57 +0100},
+ month = jun,
+ publisher = {Zenodo},
+ title = {Signals2Soundboards: Version 0.1.0},
+ version = {0.1.0},
+ year = 2025,
+ url = {https://doi.org/10.5281/zenodo.15641239}}
