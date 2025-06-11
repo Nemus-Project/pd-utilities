@@ -49,8 +49,6 @@ This is the output section of the patch. You can both visualize the output frequ
 
 ![alt text](output.png)
 
-
-
 ## References
 
 [1] Ernst Florens Friedrich Chladni. Treatise on Acoustics: The First Comprehensive English Translation of EFF Chladni’s Trait´e d’Acoustique. Springer, 2015.
