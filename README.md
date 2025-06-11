@@ -1,4 +1,5 @@
 # NEMUS PureData Utilities
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15641239.svg)](https://doi.org/10.5281/zenodo.15641239)
 
 A suite of PureData utility patches for experiments and measurements carried out at the NEMUS project.
 
