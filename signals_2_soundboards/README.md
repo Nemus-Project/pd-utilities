@@ -57,8 +57,8 @@ This is the output section of the patch. You can both visualize the output frequ
 
 ## BibTex Citation
 
-@software{duran_pd_2025,
- author = {Sebastian Duran and Matthew Hamilton},
+@misc{duran_pd_2025,
+ author = {Sebastian Duran and Matthew Hamilton },
  date-modified = {2025-06-11 14:49:57 +0100},
  month = jun,
  publisher = {Zenodo},
