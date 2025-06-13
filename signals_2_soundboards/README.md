@@ -57,6 +57,7 @@ This is the output section of the patch. You can both visualize the output frequ
 
 ## BibTex Citation
 
+```bibtex
 @misc{duran_pd_2025,
  author = {Sebastian Duran and Matthew Hamilton },
  date-modified = {2025-06-11 14:49:57 +0100},
@@ -66,3 +67,4 @@ This is the output section of the patch. You can both visualize the output frequ
  version = {0.1.0},
  year = 2025,
  url = {https://doi.org/10.5281/zenodo.15641239}}
+```
