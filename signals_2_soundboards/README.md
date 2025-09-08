@@ -13,7 +13,7 @@ The test signals implemented in the patch include:
 All the above mentioned sections are routed into a final output stage which allows you to monitor and control
 the output gain level of your signal.
 
-![alt text](overview.png)
+![alt text](overview2.png)
 *Figure 1: Patch overview.*
 
 In *Figure 1* you have an overview of the entire patch in which each sound source section is denoted by a different color. An “on/off” toggle to activate or deactivate a sound source is present above each section.
